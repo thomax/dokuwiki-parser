@@ -97,7 +97,7 @@ function getLine(line, elementToUse) {
       // downcase and snakecase
       pieces[pieces.length - 1] = pieces[pieces.length - 1].toLowerCase().replace(' ', '_')
       const href = pieces.join('/')
-      const newString = `<a href="${href}>${linkText}</a>`
+      const newString = `<a href="${href}">${linkText}</a>`
       line = line.replace(match, newString)
     })
   }
