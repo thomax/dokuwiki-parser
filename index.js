@@ -79,7 +79,7 @@ function getTitle(line) {
     line = line.trim();
     var i = line.search(/[^=]/);
     line = line.substr(i, line.length - i * 2 - 1).trim();
-    var element = 'h' + (6 - i);
+    var element = 'h' + (7 - i);
     return encapsulate(line, element);
 }
 
